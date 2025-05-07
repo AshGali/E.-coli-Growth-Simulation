@@ -15,7 +15,7 @@ logN0 = 3.8 # Initial population (log)
 logN_max = 10.1 # Max population (log)
 logN_min = 0 # Min population (log)
 
-milk_adj = 0.25 # Milk adjustment factor
+milk_adj = 1/6 # Milk adjustment factor (20 min in LB / 120 min in skim milk) doubling time
 
 RT_r = 1.05 # Growth rate (RT)
 RT_m = 0.58 # Curvature (RT)
@@ -74,8 +74,8 @@ plt.plot(time, hs, color = 'tomato', label = '(Milk) Heat shock')
 plt.plot(time, fr, color = 'cornflowerblue', label = '(Milk) Refrigeration')
 
 plt.xlabel("Time (hrs)", **afont)
-plt.ylabel("log CFU", **afont)
-plt.title("log CFU of E. coli Over 24 hours in Different Conditions", **tfont)
+plt.ylabel("log[CFU]", **afont)
+plt.title("Predicted log[CFU] of E. coli over 24 hours in different conditions", **tfont)
 plt.legend()
 
 plt.show()

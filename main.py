@@ -75,7 +75,7 @@ plt.plot(time, fr, color = 'cornflowerblue', label = '(Milk) Refrigeration')
 
 plt.xlabel("Time (hrs)", **afont)
 plt.ylabel("log CFU", **afont)
-plt.title("log CFU of E. coli Over Time in Different Conditions", **tfont)
+plt.title("log CFU of E. coli Over 24 hours in Different Conditions", **tfont)
 plt.legend()
 
 plt.show()
